@@ -26,13 +26,12 @@ services:
     volumes_from:
       - box
 
-
   app:
     depends_on:
       - 'postgres'
       - 'redis'
     build: .
-    command: bash start.sh
+    command: bash start
     ports:
       - '3000:3000'
     volumes:
