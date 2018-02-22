@@ -26,6 +26,7 @@ services:
     volumes_from:
       - box
 
+
   app:
     depends_on:
       - 'postgres'
